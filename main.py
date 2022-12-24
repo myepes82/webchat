@@ -18,4 +18,5 @@ def login_view() -> FileResponse:
 
 @app.post("/login", response_class=JSONResponse)
 def login(login: Login = Body(...)) -> JSONResponse:
+    return JSONResponse({},)
     
